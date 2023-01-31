@@ -14,7 +14,7 @@ const getById = (id) => {
 
 const create = async (account) => {
   // KODLAR BURAYA
-  const [id] = await db("accounts").insert(account);
+  const [id] = await db("accounts").insert(account);// önce account tablosuna gidicem
   return getById(id);
 };
 
